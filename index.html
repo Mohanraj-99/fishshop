@@ -228,16 +228,18 @@ input[type=submit]:hover {
 	</div>
 	<div class="row">
 	  <div>
-		<form action=”MAILTO:glmohan2016@gmail.com”
-			method=”POST”
-			enctype="text/plain">
+		<form method=”POST”
+			enctype="text/plain"
+			action="form-to-email.php">
 		  <label for="fname">Name</label>
 		  <input type="text" id="fname" name="firstname" placeholder="Your name..">
 		  <label for="lname">Mobile Number</label>
-		  <input type="text" id="lname" name="lastname" placeholder="Your number..">
+		  <input type="text" id="lname" name="number" placeholder="Your number..">
+		  <label for="lname">Email Address</label>
+		  <input type="text" name="email" placeholder="Your email-id.." >
 		  <label for="subject">Subject</label>
-		  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-		  <input type="submit" value="Submit">
+		  <textarea id="subject" name="message" placeholder="Write something.." style="height:170px"></textarea>
+		  <button type="submit" value="Submit"> SUBMIT </button>
 	  </form>
 	  </div>
 	</div>
